@@ -1,14 +1,16 @@
 <?php
-$arr = array(1, 2, 3,4,5,6,7); 
- 
+$arr = array( 1, 2,3,4,5,6,7); 
+$finalarray= array();
  $total= count($arr);
- for( $i=$total; $i>0;$i--)
- {
+ for( $i=$total-1; $i>0;$i--)
+  {
     
-    $finalarray=array();
-    array_push($finalarray,$i);
-    print_r($finalarray);
+  
+    $finalarray[] = $arr[$i];
+   
   
  }
+  print_r($finalarray);
 
-?>
+
+?> 
